@@ -255,8 +255,8 @@ export default function HomePage() {
                 className="text-sm border-0 bg-transparent text-gray-900 dark:text-dark-text-primary focus:outline-none focus:ring-0 cursor-pointer font-medium"
                 aria-label={t("selectLanguage")}
               >
-                <option value="en">EN</option>
-                <option value="zh">中文</option>
+                <option value="en" className="bg-white dark:bg-dark-bg-tertiary text-gray-900 dark:text-dark-text-primary">EN</option>
+                <option value="zh" className="bg-white dark:bg-dark-bg-tertiary text-gray-900 dark:text-dark-text-primary">中文</option>
               </select>
             </div>
           </nav>
@@ -308,7 +308,7 @@ export default function HomePage() {
           </div>
 
           {/* Code editor area */}
-          <div className="h-full flex flex-col">
+          <div className="h-full lg:h-full flex flex-col overflow-y-auto lg:overflow-hidden mobile-editor-container">
             {/* Dependencies editor */}
             <section aria-label={t("dependencies")}>
               <DependenciesEditor />

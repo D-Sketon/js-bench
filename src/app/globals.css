@@ -227,4 +227,17 @@ select:focus-visible {
 .dark a:focus-visible,
 .dark select:focus-visible {
   outline-color: #60a5fa;
+}
+
+/* Mobile editor container height adjustment */
+@media (max-width: 1023px) {
+  .mobile-editor-container {
+    height: calc(100% - 69px) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-editor-container {
+    height: 100% !important;
+  }
 } 
