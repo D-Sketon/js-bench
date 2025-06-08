@@ -1,0 +1,50 @@
+{
+  "name": "js-mitata-benchmark",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "benchmark",
+    "performance",
+    "react",
+    "mitata",
+    "nextjs"
+  ],
+  "author": "D-Sketon",
+  "license": "MIT",
+  "description": "Next.js frontend for JavaScript performance benchmarking using Mitata",
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@uiw/react-codemirror": "^4.23.12",
+    "@upstash/redis": "^1.35.0",
+    "lucide-react": "^0.288.0",
+    "mitata": "^1.0.34",
+    "nanoid": "^5.1.5",
+    "next": "^14.0.0",
+    "prettier": "^3.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.15.3",
+    "zustand": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.8.3"
+  }
+}
