@@ -327,7 +327,7 @@ export const BenchmarkRunner: React.FC<BenchmarkRunnerProps> = ({
           <div className="flex items-center space-x-2 bg-gray-100 dark:bg-dark-bg-tertiary rounded-lg p-1 transition-colors">
             <button
               onClick={() => setActiveView("table")}
-              className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all ${
+              className={`flex items-center px-3 py-1 rounded-md text-sm font-medium transition-all ${
                 activeView === "table"
                   ? "bg-white dark:bg-dark-bg-elevated text-blue-700 dark:text-dark-accent-blue shadow-sm"
                   : "text-gray-500 dark:text-dark-text-secondary hover:text-gray-700 dark:hover:text-dark-text-primary"
@@ -338,7 +338,7 @@ export const BenchmarkRunner: React.FC<BenchmarkRunnerProps> = ({
             </button>
             <button
               onClick={() => setActiveView("chart")}
-              className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all ${
+              className={`flex items-center px-3 py-1 rounded-md text-sm font-medium transition-all ${
                 activeView === "chart"
                   ? "bg-white dark:bg-dark-bg-elevated text-green-700 dark:text-dark-accent-green shadow-sm"
                   : "text-gray-500 dark:text-dark-text-secondary hover:text-gray-700 dark:hover:text-dark-text-primary"
