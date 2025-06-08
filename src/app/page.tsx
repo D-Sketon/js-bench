@@ -22,6 +22,7 @@ import {
   Moon,
   GripVertical,
   Share2,
+  Github,
 } from "lucide-react";
 import { useThemeChange } from "../hooks/useThemeChange";
 import { useLanguageChange } from "../hooks/useLanguageChange";
@@ -210,7 +211,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <nav className="flex items-center space-x-4" role="navigation" aria-label="Main navigation">
+          <nav className="flex items-center space-x-2" role="navigation" aria-label="Main navigation">
             <button
               onClick={handleShareClick}
               disabled={isSharing}
@@ -220,7 +221,15 @@ export default function HomePage() {
               <Share2 size={16} />
               <span className="hidden sm:inline">{isSharing ? t("shareGenerating") : t("share")}</span>
             </button>
-
+            <a
+              href="https://github.com/D-Sketon/js-bench"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-gray-500 dark:text-dark-text-secondary hover:text-gray-700 dark:hover:text-dark-text-primary hover:bg-gray-100 dark:hover:bg-dark-bg-tertiary rounded-md transition-colors"
+              aria-label="View source code on GitHub"
+            >
+              <Github size={18} />
+            </a>
             <button
               onClick={toggleTheme}
               className="p-2 text-gray-500 dark:text-dark-text-secondary hover:text-gray-700 dark:hover:text-dark-text-primary hover:bg-gray-100 dark:hover:bg-dark-bg-tertiary rounded-md transition-colors"
@@ -229,7 +238,7 @@ export default function HomePage() {
               {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
             </button>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 p-2">
               <Globe
                 size={16}
                 className="text-gray-500 dark:text-dark-text-secondary"
