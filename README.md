@@ -21,21 +21,15 @@
 
 1. **Install dependencies**
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. **Start development server**
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 3. **Open** [http://localhost:3000](http://localhost:3000)
-
-## Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
 
 ## License
 
